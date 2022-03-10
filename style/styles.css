@@ -1,0 +1,205 @@
+/* 
+fuentes utilizadas
+Para titulos : font-family: "Inter", sans-serif;
+Para lo demas : font-family: "Prata";
+ */
+
+html {
+  height: 100%;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 8%;
+}
+
+li {
+  display: inline;
+}
+
+/* header */
+.cabeza {
+  margin-top: 0%;
+  background-color: #353535b2;
+}
+
+/* UL de la barra de inicio */
+.headd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+head li:hover {
+  background-color: #fbe7507c;
+}
+
+/* navbar : Nombre de la persona */
+.name {
+  font-size: larger;
+  font-family: "Prata", sans-serif;
+  padding: 14px 16px;
+}
+
+/* links que estan centreados en la navbar */
+a.cabezaa {
+  color: white;
+  text-decoration: none;
+  padding: 20px 16px;
+}
+.centroo > li {
+  font-family: "Inter", sans-serif;
+  padding-right: 50px;
+}
+
+/* -------------------Contenedor 1 de titulo y presentacion------------------- */
+.container1 {
+  margin-left: 8%;
+  margin-right: 35%;
+  margin-top: 4%;
+}
+
+.container1 h1 {
+  font-size: 370%;
+  font-family: "Prata";
+  text-align: start;
+}
+.container1 p {
+  font-size: 120%;
+  font-family: "Inter", sans-serif;
+  text-align: start;
+  line-height: 200%;
+}
+
+.bar_img {
+  display: flex;
+  margin-left: 8%;
+  margin-top: 6%;
+  margin-right: 8%;
+}
+
+.bar_img img {
+  padding-right: 7%;
+}
+
+.contenedor2 {
+  margin-left: 8%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contenedor2 > div {
+  width: 50%;
+}
+
+.contenedor2 a {
+  margin-top: 20px;
+  font-family: "Prata";
+  text-decoration: none;
+  color: white;
+  font-size: xx-large;
+}
+
+.contenedor2 p {
+  font-family: "Inter", sans-serif;
+  margin-right: 20%;
+  text-align: justify;
+  line-height: 200%;
+}
+
+.columna1 {
+  display: grid;
+}
+
+.columna2 {
+  display: grid;
+}
+
+.contenedor3 {
+  background-color: #353535b2;
+}
+.container3 {
+  margin-left: 8%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container3 h2 {
+  font-size: 250%;
+  font-family: "Prata";
+  text-align: start;
+  margin-right: 45%;
+}
+
+.container3 p {
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  line-height: 200%;
+  column-count: 2;
+  font-family: "Inter", sans-serif;
+  line-height: 200%;
+  margin-right: 8%;
+}
+
+.container4 {
+  margin-top: 5%;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container4 h2 {
+  font-family: "Prata";
+}
+
+.container4 p {
+  font-family: "Inter", sans-serif;
+  margin-right: 52%;
+}
+
+.contactar_btn {
+  font-family: "Prata", serif;
+  background-color: #fbe850;
+  width: 120px;
+  height: 50px;
+  margin: 4px 2px;
+  font-size: 90%;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.contactar_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* configuracion css del pie de la pagina */
+
+.pies {
+  margin-top: 5%;
+  background-color: #353535b2;
+}
+
+a.piess {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #fbe7507c;
+}
