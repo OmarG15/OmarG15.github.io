@@ -24,7 +24,7 @@ Para lo demas : font-family: "Prata";
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
+  border: 2px solid red;
 }
 
 .row::after {
