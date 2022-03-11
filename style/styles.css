@@ -33,11 +33,11 @@ Para lo demas : font-family: "Prata";
   display: table;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
   }
-}
+} */
 
 html {
   height: 100%;
