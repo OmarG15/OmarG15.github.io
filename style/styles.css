@@ -4,6 +4,10 @@ Para titulos : font-family: "Inter", sans-serif;
 Para lo demas : font-family: "Prata";
  */
 
+ *{
+   box-sizing: border-box;
+ }
+
 html {
   height: 100%;
 }
@@ -62,19 +66,18 @@ a.cabezaa {
 /* -------------------Contenedor 1 de titulo y presentacion------------------- */
 .container1 {
   margin: 4% 35% 0% 8%;
-  /* margin-left: 8%;
-  margin-right: 35%;
-  margin-top: 4%; */
 }
 
 .container1 h1 {
   font-size: 370%;
   font-family: "Prata";
+  text-align: justify;
 }
 .container1 p {
   font-size: 120%;
   font-family: "Inter", sans-serif;
   line-height: 200%;
+  text-align: justify;
 }
 /* FIN CONTENEDOR 1 */
 
@@ -88,41 +91,59 @@ a.cabezaa {
 }
 /* FIN BARRA DE IMAGENES */
 
+/* CONTENEDOR 2 PROYECTOS */
 .contenedor2 {
   margin-left: 8%;
-  margin-top: 5%;
+  margin-top: 8%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  text-align: justify;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
 }
 
-.contenedor2 > div {
-  width: 50%;
+.contenedor2 div{
+  margin-right: 10%;
 }
 
-.contenedor2 a {
-  margin-top: 20px;
-  font-family: "Prata";
+.contenedor2 a{
+  font-family: "Prata"; 
+  font-size: xx-large;
   text-decoration: none;
   color: white;
-  font-size: xx-large;
+  margin-top: 20px;
 }
 
-.contenedor2 p {
+.contenedor2 p{
   font-family: "Inter", sans-serif;
-  margin-right: 20%;
-  text-align: justify;
+  font-size: large;
   line-height: 200%;
 }
 
 .columna1 {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  max-width: min-content;
+}
+.columna1 img {
+  max-width: max-content;
+  height: auto;
 }
 
 .columna2 {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  max-width: min-content;
 }
 
+.columna2 img {
+  max-width: max-content;
+  height: auto;
+}
+
+/* ---------      FIN CONTENEDOR 2        -------------*/
+
+/* CONTENEDOR 3 */
 .contenedor3 {
   background-color: #353535b2;
 }
@@ -150,6 +171,8 @@ a.cabezaa {
   line-height: 200%;
   margin-right: 8%;
 }
+
+/* FIN CONTENEDOR 3 */
 
 .container4 {
   margin-top: 5%;
