@@ -61,33 +61,32 @@ a.cabezaa {
 
 /* -------------------Contenedor 1 de titulo y presentacion------------------- */
 .container1 {
-  margin-left: 8%;
+  margin: 4% 35% 0% 8%;
+  /* margin-left: 8%;
   margin-right: 35%;
-  margin-top: 4%;
+  margin-top: 4%; */
 }
 
 .container1 h1 {
   font-size: 370%;
   font-family: "Prata";
-  text-align: start;
 }
 .container1 p {
   font-size: 120%;
   font-family: "Inter", sans-serif;
-  text-align: start;
   line-height: 200%;
 }
+/* FIN CONTENEDOR 1 */
 
-.bar_img {
+/* BARRA DE IMAGENES */
+.bar_icon {
   display: flex;
   margin-left: 8%;
   margin-top: 6%;
-  margin-right: 8%;
+  justify-content: space-between;
+  margin-right: 2%;
 }
-
-.bar_img img {
-  padding-right: 7%;
-}
+/* FIN BARRA DE IMAGENES */
 
 .contenedor2 {
   margin-left: 8%;
