@@ -4,9 +4,9 @@ Para titulos : font-family: "Inter", sans-serif;
 Para lo demas : font-family: "Prata";
  */
 
- *{
-   box-sizing: border-box;
- }
+* {
+  box-sizing: border-box;
+}
 
 html {
   height: 100%;
@@ -14,6 +14,12 @@ html {
 body {
   background-color: black;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
 
 ul {
@@ -101,19 +107,19 @@ a.cabezaa {
   flex-wrap: wrap; */
 }
 
-.contenedor2 div{
+.contenedor2 div {
   margin-right: 10%;
 }
 
-.contenedor2 a{
-  font-family: "Prata"; 
+.contenedor2 a {
+  font-family: "Prata";
   font-size: xx-large;
   text-decoration: none;
   color: white;
   margin-top: 20px;
 }
 
-.contenedor2 p{
+.contenedor2 p {
   font-family: "Inter", sans-serif;
   font-size: large;
   line-height: 200%;
@@ -146,34 +152,31 @@ a.cabezaa {
 /* CONTENEDOR 3 */
 .contenedor3 {
   background-color: #353535b2;
-}
-.container3 {
   margin-left: 8%;
   margin-top: 5%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.container3 h2 {
+.contenedor3 h2 {
   font-size: 250%;
   font-family: "Prata";
-  text-align: start;
-  margin-right: 45%;
+  margin-right: 50%;
+  margin-left: 3%;
 }
 
-.container3 p {
+.contenedor3 p {
   font-family: "Inter", sans-serif;
   text-align: justify;
   line-height: 200%;
   column-count: 2;
-  font-family: "Inter", sans-serif;
-  line-height: 200%;
-  margin-right: 8%;
+  margin-left: 3%;
+  margin-right: 5%;
 }
 
 /* FIN CONTENEDOR 3 */
 
+/* CONTENEDOR 4 */
 .container4 {
   margin-top: 5%;
   margin-left: 8%;
@@ -183,11 +186,13 @@ a.cabezaa {
 
 .container4 h2 {
   font-family: "Prata";
+  font-size: x-large;
 }
 
 .container4 p {
   font-family: "Inter", sans-serif;
-  margin-right: 52%;
+  margin-right: 62%;
+  text-align: justify;
 }
 
 .contactar_btn {
@@ -195,7 +200,7 @@ a.cabezaa {
   background-color: #fbe850;
   width: 120px;
   height: 50px;
-  margin: 4px 2px;
+  margin: 5px 2px;
   font-size: 90%;
   border-radius: 8px;
   transition-duration: 0.4s;
@@ -206,8 +211,10 @@ a.cabezaa {
   color: black;
 }
 
-/* configuracion css del pie de la pagina */
+/* FIN DE CONTENEDOR 4 */
 
+/* configuracion css del pie de la pagina */
+/* PIE DE PAGINA: FOOTER */
 .pies {
   margin-top: 5%;
   background-color: #353535b2;
@@ -225,3 +232,5 @@ a.piess {
 li a:hover {
   background-color: #fbe7507c;
 }
+
+/* FIN DE FOOTER */
