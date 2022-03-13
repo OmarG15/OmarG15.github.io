@@ -75,7 +75,7 @@ ul.headd {
 /* li a class name : Nombre de la persona */
 .name {
   font-size: larger;
-  font-family: "Prata", sans-serif;
+  font-family: "Prata", serif;
   padding: 14px 16px;
 }
 
@@ -143,7 +143,7 @@ head li:hover {
 
 .container1 h1 {
   font-size: 370%;
-  font-family: "Prata";
+  font-family: "Prata",serif;
   text-align: justify;
 }
 .container1 p {
@@ -176,7 +176,7 @@ head li:hover {
 
 
 .contenedor2 a {
-  font-family: "Prata";
+  font-family: "Prata", serif;
   font-size: 200%;
   text-decoration: none;
   color: white;
@@ -212,65 +212,74 @@ head li:hover {
 /* CONTENEDOR 3 */
 .contenedor3 {
   background-color: #353535b2;
-  margin-left: 8%;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: column;
 }
 
 .contenedor3 h2 {
-  font-size: 250%;
-  font-family: "Prata";
+  margin-left: 7%;
   margin-right: 50%;
-  margin-left: 3%;
+  text-align: justify;
+  font-size: 250%;
+  font-family: "Prata",serif;
 }
-
 .contenedor3 p {
+  margin-left: 7%;
+  margin-right: 5%;
   font-family: "Inter", sans-serif;
   text-align: justify;
   line-height: 200%;
   column-count: 2;
-  margin-left: 3%;
-  margin-right: 5%;
-}
+} 
 
 /* FIN CONTENEDOR 3 */
 
 /* CONTENEDOR 4 */
 .container4 {
-  margin-top: 5%;
-  margin-left: 8%;
-  display: flex;
-  flex-direction: column;
+  margin-left: 7%;
 }
 
-.container4 h2 {
-  font-family: "Prata";
+.container4 h3 {
+  font-family: "Prata",serif;
   font-size: x-large;
 }
 
 .container4 p {
   font-family: "Inter", sans-serif;
-  margin-right: 62%;
   text-align: justify;
 }
 
 /* FIN DE CONTENEDOR 4 */
 
+
 /* configuracion css del pie de la pagina */
 /* PIE DE PAGINA: FOOTER */
 .pies {
-  margin-top: 5%;
+  /* background-color: #353535b2; */
+}
+
+ul.foott {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   background-color: #353535b2;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;  
 }
 
 a.piess {
   float: right;
-  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.piess_div{
+  display: flex;
 }
 
 li a:hover {
@@ -304,6 +313,23 @@ li a:hover {
     margin-top: 8%;
     text-align: justify;
     
+  }
+
+  /* CONTENEDOR3 */
+  .contenedor3 h2 {
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    font-size: 250%;
+    font-family: "Prata",serif;
+  }
+
+  /* CONTENEDOR 4 */
+
+  .container4 {
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
   }
 
   ul.headd{
