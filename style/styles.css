@@ -8,76 +8,66 @@ Para lo demas : font-family: "Prata";
   box-sizing: border-box;
 }
 
+/* ancho por clases divididas en 12 columnas */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Todas las columnas flotaran a la izq y tendran un padding de 15px */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /* border: 1px solid red; */
+}
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-  border: 2px solid red;
+html {
+  height: 100%;
 }
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
 body {
   background-color: black;
   color: white;
+  margin: 0 0 0 0;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  margin-left: 8%;
-}
-
-li {
-  display: inline;
-}
-
-
 
 /* header */
 .cabeza {
-  margin-top: 0%;
   background-color: #353535b2;
 }
 
 /* UL de la barra de inicio */
-.headd {
+
+ul.headd {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
-head li:hover {
-  background-color: #fbe7507c;
-}
-
-/* navbar : Nombre de la persona */
+/* li a class name : Nombre de la persona */
 .name {
   font-size: larger;
   font-family: "Prata", sans-serif;
@@ -85,14 +75,60 @@ head li:hover {
 }
 
 /* links que estan centreados en la navbar */
+
+div.centroo{
+  display: flex;
+  flex-direction: row;
+}
 a.cabezaa {
   color: white;
   text-decoration: none;
-  padding: 20px 16px;
 }
 .centroo > li {
   font-family: "Inter", sans-serif;
-  padding-right: 50px;
+}
+
+
+
+ul.headd li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+
+  float: left;
+  padding: 15px;
+}
+
+ul.headd li a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+ul.headd li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+head li:hover {
+  background-color: #fbe7507c;
+}
+
+
+.contactar_btn {
+  font-family: "Prata", serif;
+  background-color: #fbe850;
+  width: 120px;
+  height: 50px;
+  margin: 5px 2px;
+  font-size: 90%;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.contactar_btn:hover {
+  background-color: white;
+  color: black;
 }
 
 /* -------------------Contenedor 1 de titulo y presentacion------------------- */
@@ -116,9 +152,8 @@ a.cabezaa {
 /* BARRA DE IMAGENES */
 .bar_icon {
   display: flex;
-  margin-left: 8%;
-  margin-top: 6%;
-  justify-content: space-between;
+  margin-top: 3%;
+  justify-content: space-around;
   margin-right: 2%;
 }
 /* FIN BARRA DE IMAGENES */
@@ -151,7 +186,7 @@ a.cabezaa {
 }
 
 .columna1 {
-   display: flex;
+  display: flex;
   flex-direction: column;
   /*max-width: min-content; */
 }
@@ -161,7 +196,7 @@ a.cabezaa {
 }
 
 .columna2 {
-   display: flex;
+  display: flex;
   flex-direction: column;
   /*max-width: min-content; */
 }
@@ -219,22 +254,6 @@ a.cabezaa {
   text-align: justify;
 }
 
-.contactar_btn {
-  font-family: "Prata", serif;
-  background-color: #fbe850;
-  width: 120px;
-  height: 50px;
-  margin: 5px 2px;
-  font-size: 90%;
-  border-radius: 8px;
-  transition-duration: 0.4s;
-}
-
-.contactar_btn:hover {
-  background-color: white;
-  color: black;
-}
-
 /* FIN DE CONTENEDOR 4 */
 
 /* configuracion css del pie de la pagina */
@@ -259,3 +278,36 @@ li a:hover {
 
 /* FIN DE FOOTER */
 
+@media screen and (max-width: 400px) {
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .container1 {
+    margin: 4% 0% 0% 0%;
+  }
+
+  .container1 h1 {
+    font-size: xx-large;
+  }
+
+  .container1 p {
+    font-size: medium;
+  }
+
+
+  ul.headd{
+    display: block;
+  }
+  
+  ul.headd li a {
+    text-align: center;
+    float: none;
+  }
+
+  ul.headd li {
+    text-align: center;
+    float: none;
+  }
+}
