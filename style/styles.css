@@ -240,7 +240,7 @@ li a:hover {
 
 /* FIN DE FOOTER */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 451px) {
 
   [class*="col-"] {
     width: 100%;
