@@ -26,7 +26,7 @@ Para lo demas : font-family: "Prata";
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .row::after {
@@ -50,24 +50,20 @@ img {
 }
 
 /* header */
-.cabeza {
-  background-color: #353535b2;
-}
-
 /* UL de la barra de inicio */
 
 ul.headd {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
+  color: white;
   overflow: auto;
   width: 100%;
   height: auto;
   position: relative;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   
 }
@@ -85,19 +81,14 @@ div.centroo{
   display: flex;
   flex-direction: row;
 }
-a.cabezaa {
-  color: white;
-  text-decoration: none;
-}
+
 .centroo > li {
   font-family: "Inter", sans-serif;
 }
 
-
-
 ul.headd li a {
   display: block;
-  color: #000;
+  color: rgb(255, 255, 255);
   padding: 8px 16px;
   text-decoration: none;
 
@@ -118,8 +109,7 @@ ul.headd li a:hover:not(.active) {
 head li:hover {
   background-color: #fbe7507c;
 }
-
-
+/*-----------------------------------BOTON DE CONTACTAR --------------------*/
 .contactar_btn {
   font-family: "Prata", serif;
   background-color: #fbe850;
@@ -135,7 +125,7 @@ head li:hover {
   background-color: white;
   color: black;
 }
-
+/*-----------------------------------FIN BOTON DE CONTACTAR --------------------*/
 /* -------------------Contenedor 1 de titulo y presentacion------------------- */
 .container1 {
   margin: 4% 0% 0% 8%;
@@ -152,29 +142,23 @@ head li:hover {
   line-height: 200%;
   text-align: justify;
 }
-/* FIN CONTENEDOR 1 */
-
-/* BARRA DE IMAGENES */
+/* -----------------------------FIN CONTENEDOR 1 ----------------------*/
+/* -----------------------------BARRA DE IMAGENES ---------------------*/
 .bar_icon {
   display: flex;
   margin-top: 3%;
   justify-content: space-around;
   margin-right: 2%;
 }
-/* FIN BARRA DE IMAGENES */
-
-/* CONTENEDOR 2 PROYECTOS */
+/* ---------------------------FIN BARRA DE IMAGENES --------------------*/
+/* ---------------------------CONTENEDOR 2 PROYECTOS --------------------------*/
 .contenedor2 {
   margin-left: 8%;
   margin-top: 4%;
   text-align: justify;
   display: flex;
   justify-content: space-between;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
 }
-
-
 .contenedor2 a {
   font-family: "Prata", serif;
   font-size: 200%;
@@ -182,34 +166,12 @@ head li:hover {
   color: white;
 }
 
-/* .contenedor2 p {
-  font-family: "Inter", sans-serif;
-  font-size: large;
-  line-height: 200%;
-} */
-
-/* .columna1 {
-  display: flex;
-  flex-direction: column;
+.contenedor2 P{
+  font-family: "inter", sans-serif;
+  font-size: larger;
 }
-.columna1 img {
-  max-width: max-content;
-  height: auto;
-}
-
-.columna2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.columna2 img {
-  max-width: max-content;
-  height: auto;
-} */
-
-/* ---------      FIN CONTENEDOR 2        -------------*/
-
-/* CONTENEDOR 3 */
+/* -------------------      FIN CONTENEDOR 2   ---------- -------------*/
+/* ---------------------------CONTENEDOR 3 ----------------------------*/
 .contenedor3 {
   background-color: #353535b2;
 }
@@ -230,9 +192,9 @@ head li:hover {
   column-count: 2;
 } 
 
-/* FIN CONTENEDOR 3 */
+/* -------------------------FIN CONTENEDOR 3--------------------------- */
 
-/* CONTENEDOR 4 */
+/* -------------------------CONTENEDOR 4 -------------------------------*/
 .container4 {
   margin-left: 7%;
 }
@@ -247,14 +209,11 @@ head li:hover {
   text-align: justify;
 }
 
-/* FIN DE CONTENEDOR 4 */
+/* ------------------------------FIN DE CONTENEDOR 4----------------------------------- */
 
 
 /* configuracion css del pie de la pagina */
 /* PIE DE PAGINA: FOOTER */
-.pies {
-  /* background-color: #353535b2; */
-}
 
 ul.foott {
   list-style-type: none;
