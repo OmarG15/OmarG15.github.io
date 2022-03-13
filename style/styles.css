@@ -26,7 +26,7 @@ Para lo demas : font-family: "Prata";
 [class*="col-"] {
   float: left;
   padding: 15px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .row::after {
@@ -42,6 +42,11 @@ body {
   background-color: black;
   color: white;
   margin: 0 0 0 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* header */
@@ -161,34 +166,31 @@ head li:hover {
 /* CONTENEDOR 2 PROYECTOS */
 .contenedor2 {
   margin-left: 8%;
-  margin-top: 8%;
+  margin-top: 4%;
   text-align: justify;
+  display: flex;
+  justify-content: space-between;
   /* flex-direction: row;
   flex-wrap: wrap; */
 }
 
-.contenedor2 div {
-  margin-right: 5%;
-}
 
 .contenedor2 a {
   font-family: "Prata";
   font-size: 200%;
   text-decoration: none;
   color: white;
-  margin-top: 20px;
 }
 
-.contenedor2 p {
+/* .contenedor2 p {
   font-family: "Inter", sans-serif;
   font-size: large;
   line-height: 200%;
-}
+} */
 
-.columna1 {
+/* .columna1 {
   display: flex;
   flex-direction: column;
-  /*max-width: min-content; */
 }
 .columna1 img {
   max-width: max-content;
@@ -198,13 +200,12 @@ head li:hover {
 .columna2 {
   display: flex;
   flex-direction: column;
-  /*max-width: min-content; */
 }
 
 .columna2 img {
   max-width: max-content;
   height: auto;
-}
+} */
 
 /* ---------      FIN CONTENEDOR 2        -------------*/
 
@@ -296,6 +297,14 @@ li a:hover {
     font-size: medium;
   }
 
+  /* CONTENEDOR2 */
+  .contenedor2 {
+    display: block;
+    margin-left: 0%;
+    margin-top: 8%;
+    text-align: justify;
+    
+  }
 
   ul.headd{
     display: block;
