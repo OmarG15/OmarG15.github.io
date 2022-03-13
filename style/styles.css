@@ -57,15 +57,9 @@ ul.headd {
   margin: 0;
   padding: 0;
   color: white;
-  overflow: auto;
-  width: 100%;
-  height: auto;
-  position: relative;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 /* li a class name : Nombre de la persona */
@@ -79,7 +73,6 @@ ul.headd {
 
 div.centroo{
   display: flex;
-  flex-direction: row;
 }
 
 .centroo > li {
@@ -134,7 +127,7 @@ head li:hover {
 .container1 h1 {
   font-size: 370%;
   font-family: "Prata",serif;
-  text-align: justify;
+  text-align: initial;
 }
 .container1 p {
   font-size: 120%;
@@ -253,6 +246,11 @@ li a:hover {
     width: 100%;
   }
 
+  .cabezaa{
+    width: 100%;
+    height: auto;
+  }
+
   .container1 {
     margin: 4% 0% 0% 0%;
   }
@@ -292,7 +290,12 @@ li a:hover {
   }
 
   ul.headd{
+    overflow: auto;
     display: block;
+  }
+
+  div.centroo{
+    display: flex;
   }
   
   ul.headd li a {
@@ -303,5 +306,11 @@ li a:hover {
   ul.headd li {
     text-align: center;
     float: none;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  div.centroo{
+    display: block;
   }
 }
