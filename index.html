@@ -10,10 +10,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        jQuery(function () {
+            var aparece = false;
+            var pagetop = $('#page_top');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    if (aparece == false) {
+                        aparece = true;
+                        pagetop.stop().animate({
+                            'bottom': '60px'
+                        }, 500);
+                    }
+                } else {
+                    if (aparece) {
+                        aparece = false;
+                        pagetop.stop().animate({
+                            'bottom': '-60px'
+                        }, 500);
+                    }
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500);
+                return false;
+            });
+        });
+    </script>
     <title>Portafolio Omar González</title>
 </head>
 
 <body>
+    <div id="page_top"><a href="#"></a></div>
     <!-- Inicio Cabecero de la Pagina -->
     <header class="cabeza">
         <ul class="headd">
@@ -25,9 +55,10 @@
                 <li><a class="cabezaa" href="">Acerca de</a></li>
             </div>
             <li>
-                <form action="mailto:omar.eliecer@hotmail.com">
-                    <input type="submit" class="contactar_btn" value="Contactarme">
-                </input>
+                <form action="mailto:omar.eliecer@hotmail.es">
+                    <button class="button" type="submit" style="  vertical-align: middle;
+                    width: 155px"><span>Contactarme</span>
+                    </button>
                 </form>
             </li>
         </ul>
@@ -40,7 +71,7 @@
             <h1>Ayudando a construir aplicaciones de mejor desempeño y adaptabilidad</h1>
             <p>Desarrollador de Software con base en Front-End y diseño de aplicaciones Web
                 y moviles, conocimientos en diferentes tipos de lenguaje de programacion
-                 en busca de ofertas laborales ó Proyectos en desarrollo.
+                en busca de ofertas laborales ó Proyectos en desarrollo.
             </p>
         </div>
     </div>
@@ -66,7 +97,7 @@
     <div class="row contenedor2">
         <div class="col-5">
             <img src="Assets/Relog.png">
-            <a href="Proyectos/JS/Reloj/index.html">Reloj</a>
+            <a href="Proyectos/JS/Reloj/index.html" alt="Reloj">Reloj</a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Sit beatae illo odio, illum unde soluta accusantium quo dolor modi,
                 ab adipisci? Quasi vitae maiores voluptates, enim ad inventore necessitatibus nobis.
@@ -123,7 +154,7 @@
             </p>
             <form action="mailto:omar.eliecer@hotmail.com">
                 <input type="submit" class="contactar_btn" value="Contactarme">
-            </input>
+                </input>
             </form>
         </div>
     </div>
@@ -141,5 +172,7 @@
         </ul>
     </footer>
 </body>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 
 </html>
