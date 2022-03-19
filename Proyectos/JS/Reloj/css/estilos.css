@@ -5,9 +5,31 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: sans-serif;
-
+  /* display: grid; */
 }
-.re{
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #c13eff;
+}
+
+li {
+  color: #c13eff;
+  /* display: inline; */
+  /* float: left; */
+}
+
+a {
+  padding: 8px;
+  /* background-color: #000000; */
+  
+}
+
+.re {
+  display: flex;
+  flex-direction: column;
   margin-top: 150px;
 }
 
@@ -15,6 +37,18 @@ body {
   background-color: #ffffff10;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+}
+#btn-full {
+  background-color: transparent;
+  border-color: transparent;
+  align-self: flex-end;
+}
+
+#btn-esc {
+  display: none;
+  background-color: transparent;
+  border-color: transparent;
+  align-self: flex-end;
 }
 
 #reloj {
@@ -29,32 +63,32 @@ body {
   text-align: center;
   border-radius: 5px;
   margin: 0 auto;
-  margin-top: 8%;
+  margin-top: 0%;
   border: rgb(218, 80, 30) 2px solid;
 }
 
-#hora{
+#hora {
   letter-spacing: 15px;
 }
-
 
 #fecha {
   letter-spacing: 10px;
   font-size: 15px;
 }
 
-.mensaje{
+.mensaje {
   position: fixed;
   bottom: 0;
+  right: 0;
   font-size: 20px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 
-a:link{
+a:link {
   color: transparent;
 }
 
-.text{
+.text {
   background: linear-gradient(90deg, #c13eff, #ff3ec9);
   background-clip: text;
   -webkit-background-clip: text;
@@ -62,15 +96,12 @@ a:link{
   filter: grayscale(100%);
   transition: filter 800ms;
   letter-spacing: 3px;
-
 }
 
-.text:hover{
+.text:hover {
   filter: grayscale(0%);
 }
 
 .animacion {
   border: rgb(0, 0, 0) 2px solid;
 }
-
-

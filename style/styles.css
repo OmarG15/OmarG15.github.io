@@ -69,7 +69,7 @@ ul.headd {
   padding: 14px 16px;
 }
 
-/* links que estan centreados en la navbar */
+/* links que estan centrados en la navbar */
 
 div.centroo{
   display: flex;
@@ -153,13 +153,14 @@ ul.headd li a:hover:not(.active) {
 /*-----------------------------------FIN BOTON DE CONTACTAR --------------------*/
 /* -------------------Contenedor 1 de titulo y presentacion------------------- */
 .container1 {
-  margin: 4% 0% 0% 8%;
+  margin: 5% 0% 6% 8%;
 }
 
 .container1 h1 {
   font-size: 370%;
   font-family: "Prata",serif;
   text-align: initial;
+  margin-bottom: 8%;
 }
 .container1 p {
   font-size: 120%;
@@ -171,15 +172,13 @@ ul.headd li a:hover:not(.active) {
 /* -----------------------------BARRA DE IMAGENES ---------------------*/
 .bar_icon {
   display: flex;
-  margin-top: 3%;
+  margin: 3% 2% 4% 0%;
   justify-content: space-around;
-  margin-right: 2%;
 }
 /* ---------------------------FIN BARRA DE IMAGENES --------------------*/
 /* ---------------------------CONTENEDOR 2 PROYECTOS --------------------------*/
 .contenedor2 {
-  margin-left: 8%;
-  margin-top: 4%;
+  margin: 5% 0% 8% 8%;
   text-align: justify;
   display: flex;
   justify-content: space-between;
@@ -199,6 +198,7 @@ ul.headd li a:hover:not(.active) {
 /* ---------------------------CONTENEDOR 3 ----------------------------*/
 .contenedor3 {
   background-color: #353535b2;
+  margin-bottom: 5%;
 }
 
 .contenedor3 h2 {
@@ -222,6 +222,7 @@ ul.headd li a:hover:not(.active) {
 /* -------------------------CONTENEDOR 4 -------------------------------*/
 .container4 {
   margin-left: 7%;
+  margin-bottom: 5%;
 }
 
 .container4 h3 {

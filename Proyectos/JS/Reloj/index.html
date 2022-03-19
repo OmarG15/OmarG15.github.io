@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/a36c85cd89.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +14,13 @@
 </head>
 
 <body>
+
+    <div class="text" id="texto">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+        </ul>
+    </div>
+
     <div class="contenedor re" id="a1">
         <div id="reloj">
             <div class="reloj-contenedor" id="contenedor">
@@ -20,7 +28,11 @@
                 <div id="fecha">con Javascript</div>
             </div>
         </div>
+        <button id="btn-full" onclick="launchFullScreen(document.documentElement);"><i class="fa-solid fa-expand fa-3x"></i></button>
+        <button id="btn-esc" onclick="cancelFullScreen();"><i class="fa-solid fa-compress fa-3x"></i></button>
     </div>
+
+    
 
     <div class="contenedor mensaje">
         <div class="text">
