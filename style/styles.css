@@ -283,6 +283,7 @@ li a:hover {
   background: #ffffff;
   opacity: 0.6;
   border-radius: 50%;
+  transition: background-color 0.5s ease-out 100ms
 }
 #page_top a{
   position: relative;
@@ -307,7 +308,79 @@ li a:hover {
   margin: auto;
   text-align: center;
 }
-	
+
+#page_top:hover{
+  background-color: whitesmoke;
+}
+
+
+.tooltip {
+  position: relative;
+  /* background: pink; */
+  padding: 25px 20px;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 100%;
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+}
+
+.tooltip:before,
+.tooltip:after {
+  position: absolute;
+  content: '';
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.tooltip:before {
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: rgba(255, 192, 203, 0) transparent transparent transparent;
+  top: 15px;
+   transform: translateY(20px);
+}
+
+.tooltip:after {
+  content: attr(data-tooltip);
+  background: rgba(255, 192, 203, 0);
+  width: 160px;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  top: -75px;
+  left: -150px;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transform: translateY(200px);
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+  opacity: 2;
+  transform: translateY(-20px);
+}
+
+@keyframes shake {
+  0% { 
+    transform: rotate(2deg);
+  }
+  50% {
+   transform: rotate(-3deg);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#page_top:hover {
+  animation: shake 300ms ease-in-out alternate;
+}
 
 @media screen and (max-width: 451px) {
 
