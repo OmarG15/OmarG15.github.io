@@ -437,7 +437,7 @@ li a:hover {
   }
 
   div.centroo{
-    display: flex;
+    display: block;
   }
   
   ul.headd li a {
